@@ -1,0 +1,52 @@
+.about {
+      &__descr {
+            margin: 0;
+            max-width: 890px;
+            background-color: var(--sections-bg);
+            color: var(--dark-color);
+            font-size: 30px;
+            line-height: 160%;
+            margin-bottom: 60px;
+
+            @include min-desktop {
+                  font-size: 24px;
+                  margin-bottom: 40px;
+            }
+            @include mobile {
+                  font-size: 20px;
+            }
+      }
+      &__list {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 40px;
+
+            @include mobile {
+                  gap: 0;
+            }
+      }
+      &__item {
+            grid-column: 3 span;
+            @include high-desktop {
+                  grid-column: 6 span;
+            }
+            @include mobile {
+                  grid-column: 12 span;
+            }
+      }
+      &__digit {
+            color: var(--accent-color);
+            font-size: 70px;
+            font-weight: 600;
+            line-height: 160%;
+
+            @include tablet {
+                  font-size: 40px;
+            }
+      }
+      &__text {
+            margin: 0;
+            color: var(--text-color);
+            line-height: 160%;
+      }
+}

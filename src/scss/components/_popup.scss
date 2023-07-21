@@ -1,0 +1,175 @@
+.graph-modal__close {
+      color: var(--dark-color);
+      line-height: 160%;
+      background-image: none;
+      width: auto;
+      height: auto;
+      top: 40px;
+      right: 40px;
+
+      @include lg {
+           top: 20px;
+      }
+      @include tablet {
+            right: 20px;
+            font-size: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url(../img/exit.svg);
+            background-repeat: no-repeat;
+            background-position:  center;
+            background-size: cover;
+      }
+}
+.popup {
+      padding: 40px;
+      @include lg {
+            padding-top: 20px;
+            padding-bottom: 20px;
+      }
+      @include tablet {
+            padding: 20px;
+      }
+      @include mobile {
+            padding-top: 40px;
+      }
+      &__top {
+            display: flex;
+            margin-bottom: 40px;
+            @include tablet {
+                  margin-bottom: 20px;
+            }
+      }
+      &__image {
+            margin-right: 40px;
+            border-radius: 20px;
+            .image {
+                  border-radius: 20px;
+            }
+
+            @include tablet {
+                  margin-right: 20px;
+            }
+            @include mobile {
+                  .image {
+                        width: 60px;
+                        height: 88px;
+                        border-radius: 5px;
+                  }
+            }
+      }
+      &__name {
+            color: var(--dark-color);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 160%;
+            margin-bottom: 10px;
+
+            @include mobile {
+                  font-size: 16px;
+                  margin-bottom: 5px;
+            }
+      }
+      &__post {
+            color: var(--text-color);
+            line-height: 160%;
+
+            @include mobile {
+                  font-size: 12px;
+                  line-height: 140%;
+            }
+      }
+      &__social {
+            margin-top: 10px;
+      }
+
+      &__descr {
+            margin-bottom: 40px;
+            @include tablet {
+                  margin-bottom: 20px;
+            }
+      }
+      &__text {
+            margin: 0;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            color: var(--dark-color);
+            font-size: 20px;
+            line-height: 160%;
+
+            @include tablet {
+                  line-height: 120%;
+                  font-size: 16px;
+            }
+      }
+      &__content-title {
+            margin: 0;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 160%;
+      }
+      &__bottom-content {
+            max-height: 364px;
+            overflow-y: auto;
+
+            @include lg {
+                  max-height: 200px;
+            }
+      }
+      .simplebar-track.simplebar-vertical {
+            border-radius: 40px;
+            width: 5px;
+            background: rgba(20, 16, 36, 0.08);
+      }
+      .simplebar-scrollbar {
+            border-radius: 40px;
+            background-color: var(--dark-color);
+      }
+}
+
+.tabs {
+      &__menu {
+            // padding-bottom: 20px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+
+            @include tablet {
+                  margin-bottom: 20px;
+            }
+      }
+      &__nav {
+            max-width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            &-btn {
+                  color: var(--dark-color);
+                  font-size: 20px;
+                  line-height: 160%;
+
+                  &:focus {
+                        background-color: transparent;
+                        color: var(--accent-color);
+                  }
+
+                  &--active {
+                        outline: none;
+                        background-color: transparent;
+                        color: var(--accent-color);
+                  }
+            }
+
+            @include tablet {
+                  max-width: 90%;
+            }
+            @include mobile {
+                  max-width: 100%;
+                  &-btn {
+                        font-size: 14px;
+                  }
+            }
+      }
+}

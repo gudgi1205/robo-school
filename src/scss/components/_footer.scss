@@ -1,0 +1,27 @@
+.footer {
+      padding: 40px 0;
+      background-color: var(--dark-color);
+      @include tablet {
+            padding: 20px 0;
+      }
+
+      &__container {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+
+            @include mobile {
+                  flex-direction: column-reverse;
+                  align-items: center;
+                  gap: 20px;
+            }
+      }
+
+
+      &__copyrights {
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 16px;
+            line-height: 160%;
+            margin-top: 5px;
+      }
+}

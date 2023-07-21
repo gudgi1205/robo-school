@@ -1,0 +1,83 @@
+.hero {
+      min-height: 640px;
+      // padding-top: 200px;
+      background-color: var(--dark-color);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center left 75%;
+
+      @include lg {
+            background-position:  center left 85%;
+      }
+      @include high-desktop {
+            background-position:  center left 115%;
+      }
+      @include min-desktop {
+            background-position:  bottom right -22%;
+            background-size: 450px;
+      }
+      @include tablet {
+            background-image: none !important
+      }
+    
+      
+      &__container {
+            display: flex;
+            align-items: center;
+      }
+      &__content {
+            max-width: 516px;
+            margin: 150px 0 0 0;
+
+            @include tablet {
+                 max-width: 100%;
+                 margin-left: 60px;
+            }
+            @include mobile {
+                 margin-left: 5px;
+            }
+      }
+      &__title {
+            color: var(--light-color);
+            font-size: 70px;
+            font-weight: 600;
+            line-height: 160%;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+
+            @include high-desktop {
+                  font-size: 60px;
+            }
+            @include tablet {
+                  font-size: 50px;
+            }
+            @include mobile {
+                 font-size: 40px;
+            }
+      }
+      &__title-text {
+            display: block;
+            margin-top: 20px;
+            max-width: 90%;
+            line-height: 160%;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: initial;
+
+            @include min-desktop {
+                  max-width: 70%;
+            }
+            @include tablet {
+                  max-width: 100%;
+            }
+      }
+
+      // &__image {
+      //       transform: translateX(90px);
+
+      //       @include min-desktop {
+      //             width: 500px;
+      //             height: auto;
+      //       }
+      // }
+}

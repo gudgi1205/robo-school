@@ -1,0 +1,28 @@
+.form {
+      .just-validate-error-label {
+            color: var(--light-color) !important;
+            font-size: 14px;
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+
+      &__label {
+
+      }
+      &__input {
+            width: 100%;
+            padding: 19px 20px;
+            border-radius: 5px;
+            color: var(--dark-color);
+
+            &::placeholder {
+                  color: var(--text-color);
+            }
+      }
+      &__btn {
+            padding: 19px 0;
+      }
+}

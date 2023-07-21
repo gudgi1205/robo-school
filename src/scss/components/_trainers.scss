@@ -1,0 +1,110 @@
+.trainers {
+      &__wrapper {
+            padding-left: max(15px, calc((100% - var(--content-width)) / 2));
+            @include min-desktop {
+                  padding-left: 10px;
+                  padding-right: 10px;
+            }
+      }
+      &__title {
+            margin-bottom: 50px;
+
+            @include tablet {
+                  margin-bottom: 30px;
+            }
+      }
+      &__image {
+            border-radius: 20px;
+            margin-bottom: 20px;
+
+            @include min-desktop {
+                  width: 100%;
+                  height: 450px;
+            }
+            @include tablet {
+                  margin-bottom: 10px;
+            }
+      }
+      &__name {
+            color: var(--dark-color);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 160%;
+            margin-bottom: 10px;
+      }
+      &__post {
+            color: var(--text-color);
+            line-height: 160%;
+      }
+      &__btn {
+            color: var(--accent-color);
+            line-height: 160%;
+            margin-top: 20px;
+            text-transform: capitalize;
+      }
+      &__nav {
+            @include flex-all-sb;
+            position: relative;
+            margin-top: 70px;
+
+            @include tablet {
+                  margin-top: 40px;
+            }
+      }
+      &__scroll {
+            width: 360px;
+            height: 5px;
+            border-radius: 40px;
+            background: rgba(237, 236, 238, 1);
+            cursor: pointer;
+
+            @include min-desktop {
+                  width: 100%;
+            }
+      }
+      .swiper-scrollbar-drag {
+            background: rgba(20, 16, 36, 1);
+      }
+      &__slider-btns {
+            position: relative;
+      }
+      &__slider-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgba(23, 16, 36, 1);
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: background-color .2s ease-in-out;
+
+            &:hover {
+                  background-color: rgb(175, 175, 175);
+            }
+            &::after {
+                  content: '';
+                  border: solid var(--light-color);
+                  border-width: 0 3px 3px 0;
+                  padding: 4px;
+
+                  transition: border .2s ease-in-out;
+            }
+            &:hover::after {
+                  border: solid var(--dark-color);
+                  border-width: 0 3px 3px 0;
+                  padding: 4px;
+            }
+            @include min-desktop {
+                  display: none;
+            }
+      }
+      &__slider-btn--prev {
+            transform: rotate(135deg);
+            margin-right: 10px;
+      }
+      &__slider-btn--next {
+            transform: rotate(-45deg);
+      }
+}

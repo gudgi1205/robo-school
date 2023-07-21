@@ -1,0 +1,27 @@
+.nav {
+      &__list {
+            @include flex;
+            @include min-desktop {
+                  display: none;
+            }
+      }
+      &__item {
+            &:not(:last-child) {
+                  margin-right: 40px;
+
+                  @include min-desktop {
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                  }
+            }
+      }
+      &__link {
+            font-size: calc(var(--font-size) + 2px);
+            line-height: 160%;
+            color: var(--light-color);
+
+            @include min-desktop {
+                  font-size: 24px;
+            }
+      }
+}
