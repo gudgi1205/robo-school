@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Robo School</title>
+  <link rel="preload" href="fonts/JostRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JostSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JostBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container-fluid header__container">
+    <a href="#" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="logo__image" width="228" height="48" alt="logo">
+    </a>
+    <nav class="nav" title="Главное меню">
+      <ul class="nav__list list-reset" data-menu>
+        <li class="nav__item"><a href="#about" class="nav__link" data-scroll data-menu-item>О школе</a></li>
+        <li class="nav__item"><a href="#trainers" class="nav__link" data-scroll data-menu-item>Тренеры</a></li>
+        <li class="nav__item"><a href="#tariffs" class="nav__link" data-scroll data-menu-item>Стоимость</a></li>
+      </ul>
+    </nav>
+
+    <a href="tel:+78000001122" class="phone header__phone">
+      +7 (800-00) 0-11-22
+      <svg class="call">
+        <use xlink:href="img/sprite.svg#call"></use>
+      </svg>
+    </a>
+    <div class="burger-wrapper">
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero" style="background-image: url(img/hero-image.png);">
+      <div class="container hero__container">
+            <div class="hero__content">
+                  <h1 class="hero__title title-reset">
+                        ROBO SCHOOL
+                        <span class="hero__title-text">
+                              Курсы повышения квалификации по робототехнике для педагогов начальной школы
+                        </span>
+                  </h1>
+
+                  <a href="#tariffs" class="hero__link btn btn-reset" data-scroll>Записаться на курс</a>
+            </div>
+            <!-- <picture>
+              <source srcset="img/hero-image.webp" type="image/webp">
+              <img loading="lazy" src="img/hero-image.png" class="hero__image" width="783" height="917" alt="Девушка студентка">
+            </picture> -->
+      </div>
+</section>
+      <section class="about section-offset" id="about">
+      <div class="container">
+            <h2 class="visually-hidden">О школе RoboScool</h2>
+            <p class="about__descr">
+                  <b>Robo School</b> — учреждение для формирования кадрового педагогического резерва в сфере робототехники программирования
+            </p>
+            <ul class="about__list list-reset">
+                  <li class="about__item">
+                        <div class="about__digit">10</div>
+                        <p class="about__text">
+                              УМК по различным направлениям по робототехнике
+                        </p>
+                  </li>
+                  <li class="about__item">
+                        <div class="about__digit">20</div>
+                        <p class="about__text">
+                              Школ, в которых запущена робототехника
+                        </p>
+                  </li>
+                  <li class="about__item">
+                        <div class="about__digit">100</div>
+                        <p class="about__text">
+                              Педагогов прошедших курсы повышения квалификации
+                        </p>
+                  </li>
+                  <li class="about__item">
+                        <div class="about__digit">10 000</div>
+                        <p class="about__text">
+                              Обученных детей на базе собственных центров
+                        </p>
+                  </li>
+            </ul>
+      </div>
+</section>
+      <section class="benefits section-offset">
+      <div class="container">
+            <h2 class="benefits__title section-title">
+                  Что вы получите после курса
+            </h2>
+            <ul class="benefits__list list-reset">
+                  <li class="benefits__item">
+                        <h3 class="benefits__subtitle">
+                              Удостоверение
+                        </h3>
+                        <p class="benefits__descr">
+                              Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях
+                        </p>
+                  </li>
+                  <li class="benefits__item">
+                        <h3 class="benefits__subtitle">
+                              Знания
+                        </h3>
+                        <p class="benefits__descr">
+                              По основам разработки учебно-методических комплексов
+                              по робототехнике и программированию
+                        </p>
+                  </li>
+                  <li class="benefits__item">
+                        <h3 class="benefits__subtitle benefits__subtitle--withTooltip">
+                              Практику
+                              <span class="tooltip">
+                                <button class="tooltip__btn btn-reset" aria-describedby="id1">
+                                    <svg class="">
+                                      <use href="img/sprite.svg#tooltip-icon"></use>
+                                    </svg>
+                                </button>
+                                <span class="tooltip__txt" role="tooltip" id="id1">
+                                  <span class="visually-hidden">Тултип: </span>
+                                  При наличии свободных мест
+                                </span>
+                              </span>
+                        </h3>
+                        <p class="benefits__descr">
+                              Возможность пройти практику по преподаванию робототехники на базе R: ED LAB (в оффлайн или онлайн формате)
+                        </p>
+                  </li>
+            </ul>
+      </div>
+</section>
+      <section class="trainers section-offset" id="trainers">
+      <div class="container">
+            <h2 class="section-title trainers__title">
+                  Профессиональные тренеры
+            </h2>
+      </div>
+      <div class="trainers__wrapper">
+            <div class="swiper trainers__content">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                            <div class="trainers__item">
+                                  <picture>
+                                    <source srcset="img/trainers-section/01.webp" type="image/webp">
+                                    <img loading="lazy" src="img/trainers-section/01.jpg" class="trainers__image" width="360" height="500" alt="Ирина Лайм">
+                                  </picture>
+                                  <div class="trainers__name">Ирина Лайм</div>
+                                  <div class="trainers__post">преподаватель по робототехнике</div>
+                                  <button class="btn-reset trainers__btn" data-graph-path="trainer-1">Подробнее</button>
+                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                            <div class="trainers__item">
+                                  <picture>
+                                    <source srcset="img/trainers-section/02.webp" type="image/webp">
+                                    <img loading="lazy" src="img/trainers-section/02.jpg" class="trainers__image" width="360" height="500" alt="Ирина Лайм">
+                                  </picture>
+                                  <div class="trainers__name">Марина Орлова</div>
+                                  <div class="trainers__post">преподаватель по робототехнике</div>
+                                  <button class="btn-reset trainers__btn" data-graph-path="trainer-2">Подробнее</button>
+                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                            <div class="trainers__item">
+                                  <picture>
+                                    <source srcset="img/trainers-section/03.webp" type="image/webp">
+                                    <img loading="lazy" src="img/trainers-section/03.jpg" class="trainers__image" width="360" height="500" alt="Ирина Лайм">
+                                  </picture>
+                                  <div class="trainers__name">Максим Петров</div>
+                                  <div class="trainers__post">преподаватель по программированию</div>
+                                  <button class="btn-reset trainers__btn" data-graph-path="trainer-3">Подробнее</button>
+                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                            <div class="trainers__item">
+                                  <picture>
+                                    <source srcset="img/trainers-section/04.webp" type="image/webp">
+                                    <img loading="lazy" src="img/trainers-section/04.jpg" class="trainers__image" width="360" height="500" alt="Ирина Лайм">
+                                  </picture>
+                                  <div class="trainers__name">Константин Назаров</div>
+                                  <div class="trainers__post">преподаватель по робототехнике</div>
+                                  <button class="btn-reset trainers__btn" data-graph-path="trainer-4">Подробнее</button>
+                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                            <div class="trainers__item">
+                                  <picture>
+                                    <source srcset="img/trainers-section/05.webp" type="image/webp">
+                                    <img loading="lazy" src="img/trainers-section/05.jpg" class="trainers__image" width="360" height="500" alt="Ирина Лайм">
+                                  </picture>
+                                  <div class="trainers__name">Лиза Весенняя</div>
+                                  <div class="trainers__post">преподаватель по программированию</div>
+                                  <button class="btn-reset trainers__btn" data-graph-path="trainer-5">Подробнее</button>
+                            </div>
+                     </div>
+                  </div>
+            </div>
+      </div>
+      <div class="container">
+            <div class="trainers__nav">
+                  <div class="swiper-scrollbar trainers__scroll"></div>
+                  <div class="trainers__btns">
+                        <button class="btn-reset trainers__slider-btn trainers__slider-btn--prev" aria-label="Перейти к предыдущему слайду">
+
+                        </button>
+                        <button class="btn-reset trainers__slider-btn trainers__slider-btn--next" aria-label="Перейти к следующему слайду"></button>
+                  </div>
+            </div>
+      </div>
+</section>
+      <section class="tariffs section-offset" id="tariffs">
+      <div class="container">
+            <h2 class="tariffs__title section-title">
+                  Выберите нужный пакет
+            </h2>
+
+            <ul class="list-reset tariffs__list">
+                  <li class="tariffs__item tariffs__item--current">
+                        <h3 class="tariffs__subtitle"> PRO </h3>
+                        <div class="tariffs__price">20.000 ₽</div>
+                        <p class="tariffs__descr">
+                              УМК по программированию и робототетхнике
+                        </p>
+                        <button class="tariffs__btn btn-reset btn">
+                              Оставить заявку
+                        </button>
+                  </li>
+                  <li class="tariffs__item">
+                        <h3 class="tariffs__subtitle"> ROBO </h3>
+                        <div class="tariffs__price">15.000 ₽</div>
+                        <p class="tariffs__descr">
+                              УМК по робототетхнике
+                        </p>
+                        <button class="tariffs__btn btn-reset btn">
+                              Оставить заявку
+                        </button>
+                  </li>
+                  <li class="tariffs__item">
+                        <h3 class="tariffs__subtitle"> PROG </h3>
+                        <div class="tariffs__price">10.000 ₽</div>
+                        <p class="tariffs__descr">
+                              УМК по программированию
+                        </p>
+                        <button class="tariffs__btn btn-reset btn">
+                              Оставить заявку
+                        </button>
+                  </li>
+            </ul>
+      </div>
+</section>
+      <section class="order">
+      <div class="container order__container">
+            <div class="order__left">
+                  <h2 class="order__title">
+                        Запишитесь на курс со скидкой 10%
+                  </h2>
+                  <p class="order__descr">
+                        Акция действительна до 10 марта 2022 года
+                  </p>
+            </div>
+
+            <div class="order__right">
+                  <form action="#" class="form order__form">
+                    <label class="form__label">
+                      <input type="text" name="Имя" class="input-name input-reset form__input" placeholder="Имя">
+                    </label>
+                    <label class="form__label">
+                      <input type="tel" name="Телефон" class="input-tel input-reset form__input" placeholder="Телефон">
+                    </label>
+                    <label class="form__label">
+                      <input type="email" name="E-mail" class="input-email input-reset form__input" placeholder="E-mail">
+                    </label>
+                    <button class="btn-reset form__btn btn btn--dark">Оформить заявку</button>
+                  </form>
+            </div>
+
+      </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container-fluid footer__container">
+    <div class="footer-left">
+      <a href="#" class="logo">
+        <img loading="lazy" src="img/logo.svg" class="logo__image" width="228" height="48" alt="logo">
+      </a>
+      <div class="footer__copyrights">© ROBO.SCHOOL</div>
+    </div>
+
+    <div class="footer__right">
+      <a href="tel:+78000001122" class="phone">+7 (800-00) 0-11-22</a>
+    </div>
+  </div>
+</footer>
+
+    <div class="graph-modal">
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+
+        <div class="popup__image">
+          <picture>
+            <source srcset="img/modal/popup-1.webp" type="image/webp">
+            <img loading="lazy" src="img/popup-1.jpg" class="image" width="160" height="222" alt="Ирина Лайм">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Ирина Лайм</div>
+          <div class="popup__post">Преподователь по робтотехнике</div>
+          <ul class="popup__social social list-reset">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="facebook">
+                  <use href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="insta">
+                  <use href="img/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs" data-tabs="popup-tabs-1">
+          <div class="tabs__menu">
+            <ul class="tabs__nav list-reset">
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Награды</button></li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Сентябрь 1995 — Июнь 2000
+                  </p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Специальность: Математика и компьютерные науки
+                  </p>
+                  <p class="popup__text">
+                    Форма обучения: Очная
+                  </p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__content-title">Курсы и тренинги</h3>
+                  <p class="popup__text">
+                    Ноябрь 2020 — Февраль 2021
+                  </p>
+                  <p class="popup__text">
+                    Программа дополнительного образования «3D Моделирование»
+                  </p>
+                  <p class="popup__text">
+                    Место проведения: Институт дополнительного образования «Политех»
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+               <div class="tabs__panel">
+              <div class="popup__descr">
+                <p class="popup__text">
+                  Декарь 2000 — Июнь 2022
+                </p>
+                <p class="popup__text">
+                  Санкт-Петербургский политехнический университет Петра Великого
+                </p>
+                <p class="popup__text">
+                  Факультет: Компьютерных наук и технологий
+                </p>
+                <p class="popup__text">
+                  Должнось: Преподователь математики и информатики
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Московская олимпиада по математике и информатики, 2е место
+                  </p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Должнось: Преподователь математики и информатики
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-2">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+
+        <div class="popup__image">
+          <picture>
+            <source srcset="img/modal/popup-2.webp" type="image/webp">
+            <img loading="lazy" src="img/popup-2.jpg" class="image" width="160" height="222" alt="Ирина Лайм">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Марина Орлова</div>
+          <div class="popup__post">Преподователь по робтотехнике</div>
+          <ul class="popup__social social list-reset">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="facebook">
+                  <use href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="insta">
+                  <use href="img/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs" data-tabs="popup-tabs-2">
+          <div class="tabs__menu">
+            <ul class="tabs__nav list-reset">
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Награды</button></li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Сентябрь 1995 — Июнь 2000
+                  </p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Специальность: Математика и компьютерные науки
+                  </p>
+                  <p class="popup__text">
+                    Форма обучения: Очная
+                  </p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__content-title">Курсы и тренинги</h3>
+                  <p class="popup__text">
+                    Ноябрь 2020 — Февраль 2021
+                  </p>
+                  <p class="popup__text">
+                    Программа дополнительного образования «3D Моделирование»
+                  </p>
+                  <p class="popup__text">
+                    Место проведения: Институт дополнительного образования «Политех»
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+               <div class="tabs__panel">
+              <div class="popup__descr">
+                <p class="popup__text">
+                  Декарь 2000 — Июнь 2022
+                </p>
+                <p class="popup__text">
+                  Санкт-Петербургский политехнический университет Петра Великого
+                </p>
+                <p class="popup__text">
+                  Факультет: Компьютерных наук и технологий
+                </p>
+                <p class="popup__text">
+                  Должнось: Преподователь математики и информатики
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Московская олимпиада по математике и информатики, 2е место
+                  </p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Должнось: Преподователь математики и информатики
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-3">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+
+        <div class="popup__image">
+          <picture>
+            <source srcset="img/modal/popup-3.webp" type="image/webp">
+            <img loading="lazy" src="img/popup-3.jpg" class="image" width="160" height="222" alt="Ирина Лайм">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Максим Петров</div>
+          <div class="popup__post">Преподователь по программированию</div>
+          <ul class="popup__social social list-reset">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="facebook">
+                  <use href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="insta">
+                  <use href="img/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs" data-tabs="popup-tabs-3">
+          <div class="tabs__menu">
+            <ul class="tabs__nav list-reset">
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Награды</button></li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Сентябрь 1999 — Июлбь 2004
+                  </p>
+                  <p class="popup__text">
+                    Московский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Специальность: Математика и компьютерные науки
+                  </p>
+                  <p class="popup__text">
+                    Форма обучения: Очная
+                  </p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__content-title">Курсы и тренинги</h3>
+                  <p class="popup__text">
+                    Ноябрь 2020 — Февраль 2021
+                  </p>
+                  <p class="popup__text">
+                    Программа дополнительного образования «3D Моделирование»
+                  </p>
+                  <p class="popup__text">
+                    Место проведения: Институт дополнительного образования «Политех»
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+               <div class="tabs__panel">
+              <div class="popup__descr">
+                <p class="popup__text">
+                  Декарь 2000 — Июнь 2022
+                </p>
+                <p class="popup__text">
+                  Санкт-Петербургский политехнический университет Петра Великого
+                </p>
+                <p class="popup__text">
+                  Факультет: Компьютерных наук и технологий
+                </p>
+                <p class="popup__text">
+                  Должнось: Преподователь математики и информатики
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Московская олимпиада по математике и информатики, 2е место
+                  </p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Должнось: Преподователь математики и информатики
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-4">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+
+        <div class="popup__image">
+          <picture>
+            <source srcset="img/modal/popup-4.webp" type="image/webp">
+            <img loading="lazy" src="img/popup-4.jpg" class="image" width="160" height="222" alt="Ирина Лайм">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Константин Назаров</div>
+          <div class="popup__post">Преподователь по робототехнике</div>
+          <ul class="popup__social social list-reset">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="facebook">
+                  <use href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="insta">
+                  <use href="img/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs" data-tabs="popup-tabs-4">
+          <div class="tabs__menu">
+            <ul class="tabs__nav list-reset">
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Награды</button></li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Сентябрь 1999 — Июлбь 2004
+                  </p>
+                  <p class="popup__text">
+                    Московский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Специальность: Математика и компьютерные науки
+                  </p>
+                  <p class="popup__text">
+                    Форма обучения: Очная
+                  </p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__content-title">Курсы и тренинги</h3>
+                  <p class="popup__text">
+                    Ноябрь 2020 — Февраль 2021
+                  </p>
+                  <p class="popup__text">
+                    Программа дополнительного образования «3D Моделирование»
+                  </p>
+                  <p class="popup__text">
+                    Место проведения: Институт дополнительного образования «Политех»
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+               <div class="tabs__panel">
+              <div class="popup__descr">
+                <p class="popup__text">
+                  Декарь 2000 — Июнь 2022
+                </p>
+                <p class="popup__text">
+                  Санкт-Петербургский политехнический университет Петра Великого
+                </p>
+                <p class="popup__text">
+                  Факультет: Компьютерных наук и технологий
+                </p>
+                <p class="popup__text">
+                  Должнось: Преподователь математики и информатики
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Московская олимпиада по математике и информатики, 2е место
+                  </p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Должнось: Преподователь математики и информатики
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-5">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+
+        <div class="popup__image">
+          <picture>
+            <source srcset="img/modal/popup-5.webp" type="image/webp">
+            <img loading="lazy" src="img/popup-5.jpg" class="image" width="160" height="222" alt="Ирина Лайм">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Лиза Весенняя</div>
+          <div class="popup__post">Преподователь по программированию</div>
+          <ul class="popup__social social list-reset">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="facebook">
+                  <use href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="insta">
+                  <use href="img/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs" data-tabs="popup-tabs-5">
+          <div class="tabs__menu">
+            <ul class="tabs__nav list-reset">
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Награды</button></li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Сентябрь 1999 — Июлбь 2004
+                  </p>
+                  <p class="popup__text">
+                    Московский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Специальность: Математика и компьютерные науки
+                  </p>
+                  <p class="popup__text">
+                    Форма обучения: Очная
+                  </p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__content-title">Курсы и тренинги</h3>
+                  <p class="popup__text">
+                    Ноябрь 2020 — Февраль 2021
+                  </p>
+                  <p class="popup__text">
+                    Программа дополнительного образования «3D Моделирование»
+                  </p>
+                  <p class="popup__text">
+                    Место проведения: Институт дополнительного образования «Политех»
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <p class="popup__text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+               <div class="tabs__panel">
+              <div class="popup__descr">
+                <p class="popup__text">
+                  Декарь 2000 — Июнь 2022
+                </p>
+                <p class="popup__text">
+                  Санкт-Петербургский политехнический университет Петра Великого
+                </p>
+                <p class="popup__text">
+                  Факультет: Компьютерных наук и технологий
+                </p>
+                <p class="popup__text">
+                  Должнось: Преподователь математики и информатики
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="popup__bottom-content" data-simplebar>
+              <div class="tabs__panel">
+                <div class="popup__descr">
+                  <p class="popup__text">
+                    Московская олимпиада по математике и информатики, 2е место
+                  </p>
+                  <p class="popup__text">
+                    Санкт-Петербургский политехнический университет Петра Великого
+                  </p>
+                  <p class="popup__text">
+                    Факультет: Компьютерных наук и технологий
+                  </p>
+                  <p class="popup__text">
+                    Должнось: Преподователь математики и информатики
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+
+</html>
